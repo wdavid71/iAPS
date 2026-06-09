@@ -105,7 +105,6 @@
 		19D4E4EB29FC6A9F00351451 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4E4EA29FC6A9F00351451 /* Charts.swift */; };
 		19D8FBC22ECE79C0009DA31F /* InsulinSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8FBC12ECE79A2009DA31F /* InsulinSummaryView.swift */; };
 		19DA48E829CD339B00EEA1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DA487F29CD2B8400EEA1E7 /* Assets.xcassets */; };
-		19DA48EA29CD339C00EEA1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DA487F29CD2B8400EEA1E7 /* Assets.xcassets */; };
 		19DB70A72BF8F01E00C05381 /* ActiveCOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB70A62BF8F01E00C05381 /* ActiveCOBView.swift */; };
 		19DB781D2D332F73007BBB54 /* AutoISFsettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB781C2D332F73007BBB54 /* AutoISFsettings.swift */; };
 		19DC677F29CA675700FD9EC4 /* OverrideProfilesDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC677E29CA675700FD9EC4 /* OverrideProfilesDataFlow.swift */; };
@@ -1488,7 +1487,6 @@
 		198377CF266BFEDE004DE65E /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				FEBEEC142E03F45B005473DC /* Settings.bundle */,
 				196F58CD2BDCFF80009CBF1B /* InfoPlists */,
 				19D440A926B6FEBD008DA6C8 /* Main */,
 				191D529D2BAB4982003F52E1 /* Shortcuts */,
@@ -3195,7 +3193,8 @@
 		388E595025AD948C0019842D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 2610;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					388E595725AD948C0019842D = {
 						CreatedOnToolsVersion = 12.3;
@@ -3289,7 +3288,6 @@
 				19795118275953E50044850D /* Localizable.strings in Resources */,
 				1990DC532D6C1DDE00C4D967 /* Assets.xcassets in Resources */,
 				38E8753427554D5800975559 /* Assets.xcassets in Resources */,
-				19DA48EA29CD339C00EEA1E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3379,7 +3377,6 @@
 			files = (
 				3811DE2325C9D48300A708ED /* MainDataFlow.swift in Sources */,
 				F2E8D14D2F09616A0097F482 /* TimePickerSheet.swift in Sources */,
-				3811DEEB25CA063400A708ED /* Persisted.swift in Sources */,
 				3811DEEB25CA063400A708ED /* Persisted.swift in Sources */,
 				F21580A52E47B4FF003BC827 /* PeakPicker.swift in Sources */,
 				38E44537274E411700EC9A94 /* Disk+Helpers.swift in Sources */,
@@ -3739,7 +3736,6 @@
 				D2165E9D78EFF692C1DED1C6 /* AddTempTargetDataFlow.swift in Sources */,
 				CE82E02728E869DF00473A9C /* AlertEntry.swift in Sources */,
 				38E4451E274DB04600EC9A94 /* AppDelegate.swift in Sources */,
-				198FEED62D3F8C7900A67FAE /* LiveActivityChart.swift in Sources */,
 				5BFA1C2208114643B77F8CEB /* AddTempTargetProvider.swift in Sources */,
 				BD2FF1A02AE29D43005D1C5D /* CheckboxToggleStyle.swift in Sources */,
 				E0D4F80527513ECF00BDF1FE /* HealthKitSample.swift in Sources */,
@@ -4067,6 +4063,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = "$(APP_BUILD_NUMBER)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JLAEU4Z36L;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -4089,6 +4086,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -4133,6 +4131,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = "$(APP_BUILD_NUMBER)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JLAEU4Z36L;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -4148,6 +4147,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -4169,7 +4169,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4223,7 +4222,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4278,7 +4276,6 @@
 				CODE_SIGN_ENTITLEMENTS = "FreeAPSWatch WatchKit Extension/FreeAPSWatch WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FreeAPSWatch/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iAPS;
@@ -4322,7 +4319,6 @@
 				CODE_SIGN_ENTITLEMENTS = "FreeAPSWatch WatchKit Extension/FreeAPSWatch WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FreeAPSWatch/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iAPS;
@@ -4355,7 +4351,6 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
 				INFOPLIST_FILE = FreeAPSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4376,7 +4371,6 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
 				INFOPLIST_FILE = FreeAPSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4401,7 +4395,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -4435,7 +4428,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
